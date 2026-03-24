@@ -14,6 +14,8 @@ HAL_UART_Receive(&串口句柄, 数据指针, 数据长度, 超时时间);     /
 
 HAL_UART_Transmit_IT(&串口句柄, 数据指针, 数据长度);           // 串口发送（中断方式）
 HAL_UART_Receive_IT(&串口句柄, 数据指针, 数据长度);            // 串口接收（中断方式）
+HAL_UARTEx_ReceiveToldle_IT(&串口句柄, 数据指针, 数据长度)     // 串口不定长接收（中断方式）
+
 
 HAL_UART_Transmit_DMA(&串口句柄, 数据指针, 数据长度);          // 串口发送（DMA方式）
 HAL_UART_Receive_DMA(&串口句柄, 数据指针, 数据长度);           // 串口接收（DMA方式）
